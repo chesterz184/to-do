@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>To do - by Chaz</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Chaz's To Do</h1>
+    </header>
+    <div id="wrapper">
+        <div id="content-box">
+            <!--   <div id="contents"></div>-->
+            <ul id="all-cata">
+                <p class="ul-text">所有任务</p>
+            </ul>
+            <ul id="cataList">
+                <!--<p class="ul-text">分类列表</p>-->
+                
+            </ul>
+            <button id="addContent" class="btn-bottom">
+               <i class="fa fa-plus"></i>  新增分类
+           </button>
+        </div>
+        <div id="task-box">
+            <div id="box-top">
+                <button id="filter-all" class="filter btn active">所有</button>
+                <button id="filter-unfinished" class="filter btn">未完成</button>
+                <button id="filter-finished" class="filter btn">已完成</button>
+            </div>
+            <div id="task-list">
+            <!--<ul class="date">
+                <p class="date-text">2016-07-15</p>
+                <li class="task-name">t1</li>
+                <li class="task-name">t2</li>
+                <li class="task-name">t3</li>
+            </ul>-->
+            </div>
+            <button id="addTask" class="btn-bottom">
+               <i class="fa fa-plus"></i>  新增任务
+           </button>
+        </div>
+        <div id="task-main">
+            <div id="task-top">
+                <h2 id="title"></h2>
+                <!--<a id="mark-finished"><i class="fa fa-check-square-o"></i></a>
+                <a id="edit"><i class="fa fa-pencil-square-o"></i></a>-->
+            </div>
+            <div id="task-time">
+                <p id="date"></p>
+            </div>
+            <div id="task-text"></div>
+            <div id="button-area">
+            <!--<button id="save" class="btn">保存</button>
+            <button id="cancel-save" class="btn">放弃</button>-->
+            </div>
+        </div>
+    </div>
+    <div id="cover">
+        <div id="new-cata">
+           <div id="new-head"><h3>新增分类<h3></div>
+           <div id="new-body">
+               分类名称：<input type="text" id="new-cata-name">
+           </div>
+           <div id="new-footer">
+               <button class="btn" id="confirm">确定</button>
+               <button class="btn" id="cancel">取消</button>
+           </div>
+        </div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/script.js"></script>
+</body>
